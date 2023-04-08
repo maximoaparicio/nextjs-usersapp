@@ -8,13 +8,13 @@ function Users({ users }) {
     <ul className="list-group">
       {users.map((user) => (
         <li
-          className="list-group-item d-flex justify-content-between align-items-center list-group-item-action"
+          className="list-group-item d-flex align-items-center list-group-item-action flex-wrap justify-content-between"
           key={user.id}
           onClick={() => {
             router.push(`users/${user.id}`);
           }}
         >
-          <div>
+          <div className="text-align-center">
             <h5>
               {user.first_name} {user.last_name}
             </h5>
